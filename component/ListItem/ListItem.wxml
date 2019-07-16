@@ -1,0 +1,5 @@
+<view class="Conation">
+    <view class="ListTable">
+        <view class="item" wx:for="{{list}}" data-id="{{index}}" wx:for-item="li" bind:tap="listBtn">{{li}}--index{{index}}</view>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "template-switch": "../../component/switch/switch",
+    "template-login": "../../component/Login/Login",
+    "template-ListItem": "../../component/ListItem/ListItem"
+  }
+}

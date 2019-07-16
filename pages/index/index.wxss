@@ -1,0 +1,91 @@
+.conations{
+    width: 100%;
+    height: 75rpx;
+    overflow: hidden;
+    text-align: center;
+}
+.nav-list{
+    display: inline-block;
+    width: 90%;
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%); */
+    white-space: nowrap;
+}
+.nav-item{
+    line-height: 75rpx;
+    margin: 0 20rpx;
+}
+.active{
+    color: pink;
+}
+.frame-nav{
+    width: 100%;
+    height: 50rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30rpx;
+    font-size: 26rpx;
+}
+.frame-title{
+    font-weight: bold;
+    border-left: 10rpx solid orange;
+}
+.frame-text{
+    font-size: 24rpx;
+    color: blue;
+}
+.frame-content{
+    width: 100%;
+    height: 300rpx;
+    margin: 30rpx 0;
+}
+.frame-ranking{
+    height: 100rpx;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.active1{
+    color: orange;
+}
+.rankframe{
+    width: 100%;
+    height: auto;
+}
+.framehide{
+    display: none;
+}
+.frameshow{
+    display: show;
+}
+.week-list{
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    background-color: #b4b4b4;
+    margin-top: 20rpx;
+}
+.week-title{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30rpx;
+    margin: 30rpx;
+}
+.week-switch{
+    line-height: 150rpx;
+    z-index: 99;
+}
+.week-name{
+    font-size: 36rpx;
+    font-weight: bold;
+    text-shadow: 0,5rpx 10rpx lightgrey;
+}
+.week-jieshao{
+    font-size: 28rpx;
+    color: gray;
+    margin-top: 10rpx;
+}

@@ -1,0 +1,15 @@
+<view class="constios">
+<!-- {{list_itemid}}
+<view class="list-item">
+<view class="list-text">{{listObj.list_text}}</view>
+</view> -->
+<view class="user">
+    <view class="user-headport"><image src="{{listObj.img}}" style="width:100rpx;height:100rpx" /></view>
+    <text class="user-text">{{listObj.username}}</text>
+</view>
+<view class="content">
+    <text class="cont-time">{{listObj.time}}</text>
+    <text class="cont-neirong">{{listObj.content}}</text>
+</view>
+</view>
+

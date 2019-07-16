@@ -1,0 +1,23 @@
+/* Pages/partActive/partActive.wxss */
+.part-active{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.martop{
+   margin-top: 30rpx;
+}
+.part-title{
+    font-size: 42rpx;
+    font-weight: bold;
+}
+.part-text{
+    letter-spacing: 2rpx;   /* 字母 */
+    word-spacing: 2rpx;    /* 文字 */
+    text-indent: 50rpx;    /* 缩进 */
+    white-space:normal;       /* 空白符 */
+    text-align: left;
+   
+}

@@ -1,0 +1,59 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.denglu{
+    width: 100%;
+    text-align: center;
+    font-size: 42rpx;
+}
+.dengluFrame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.user ,.pass{
+    display: flex;
+    margin-top: 10rpx;
+    margin-left: 50rpx;
+}
+input{
+    margin-left: 50rpx;
+    border: 1px solid orange;
+}
+.LoginBtn{
+    display: flex;
+    margin-top: 20rpx;
+}
+.zhucen{
+    margin-top: 10px;
+    margin-left: 60%;
+    
+}
+.info{
+    text-decoration: underline;
+    margin-left: 20rpx;
+    color: blue;
+}
+.privte{
+    text-align: center;
+    height: 200rpx;
+    line-height: 200rpx;
+    font-weight: bold;
+}
+.fangshi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.yuan{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+    border: 1rpx solid pink;
+    margin-left: 5rpx;
+}
+.li1{
+    
+}

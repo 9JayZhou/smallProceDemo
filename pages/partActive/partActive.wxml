@@ -1,0 +1,13 @@
+<!--Pages/partActive/partActive.wxml-->
+<view class="contios">活动参与页面</view>
+<view class="part-active">
+<image src="../../images/002.jpg" />
+<text class="part-title martop">活动参与页面标题</text>
+<view class="part-text martop">
+活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题
+活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题
+活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题
+活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题活动参与页面标题
+</view>
+ <button open-type='share'>转发按钮</button>
+</view>

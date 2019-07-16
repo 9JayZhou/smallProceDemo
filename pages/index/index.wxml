@@ -1,0 +1,86 @@
+<view>
+    <view class="conations">
+        <scroll-view scroll-x="true" class="nav-list">
+            <text class="nav-item active" data-index1="0" bind:tap="HomePageClick">首页有点啥推荐</text>
+            <text class="nav-item" data-index1="1" bind:tap="HomePageClick">请问今天想来点兔子吗</text>
+            <text class="nav-item" data-index1="2" bind:tap="HomePageClick">盾之勇者成名录</text>
+            <text class="nav-item" data-index1="3" bind:tap="HomePageClick">紫罗兰永恒花园</text>
+            <text class="nav-item" data-index1="4" bind:tap="HomePageClick">海贼王</text>
+            <text class="nav-item" data-index1="5" bind:tap="HomePageClick">微信小程序</text>
+            <text class="nav-item" data-index1="6" bind:tap="HomePageClick">腾讯QQ</text>
+            <text class="nav-item" data-index1="7" bind:tap="HomePageClick">Bootstrap4</text>
+        </scroll-view>
+    </view>
+   <view class="Homepage {{index1==0 ? 'frameshow' :'framehide'}}">
+        <!-- frame 导航栏 -->
+    <view class="frame-nav">
+        <text class="frame-title">每日推荐</text>
+        <text class="frame-text">更多>></text>
+    </view>
+    <!-- 内容展示栏 -->
+    <swiper class="frame-content" indicator-dots="ture" autoplay="ture" interval="2000" duration="1000">
+        <block wx:for="{{imgUrls}}" wx:for-item="frameimg" wx:key="index">
+            <swiper-item>
+                <image src="{{frameimg}}" style="width:100%;height:300rpx" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="frame-ranking">
+        <text data-rankid="0" class="rankweek ranking {{index==0 ? 'active1' :''}}" bindtap="rankingClick">
+            周排行
+        </text>
+        <text data-rankid="1" class="rankmonth ranking {{index==1 ? 'active1' :''}}" bindtap="rankingClick">
+            月排行
+        </text>
+        <text data-rankid="2" class="rankyear ranking {{index==2 ? 'active1' :''}}" bindtap="rankingClick">
+            年度排行
+        </text>
+    </view>
+    <view>
+        <view class="rankFrameweek rankframe {{index==0 ? 'frameshow' :'framehide'}}">
+            <view class="week-list" wx:for="{{list}}" wx:for-item="weeklist" wx:key="index" bindtap="details" data-postad="{{weeklist.listid}}">
+                <image src="../../images/002.jpg" style="width:150rpx;height:150rpx" />
+                <view class="week-title">
+                    <text class="week-name">{{weeklist.name}}</text>
+                    <text class="week-jieshao">{{weeklist.jieshao}}</text>
+                </view>
+                <!-- 组件 -->
+                <template-switch class="week-switch">{{}}</template-switch>
+            </view>
+        </view>
+        <view class="rankFramemonth rankframe {{index==1 ? 'frameshow' :'framehide'}}">
+            暂时没有内容2
+        </view>
+        <view class="rankFrameyear rankframe {{index==2 ? 'frameshow' :'framehide'}}">
+         <view class="week-list" wx:for="{{list3 }}" wx:for-item="weeklist3" wx:key="index">
+                <image src="../../images/002.jpg" style="width:150rpx;height:150rpx" />
+                <view class="week-title">
+                    <text class="week-name">{{weeklist3.name}}</text>
+                    <text class="week-jieshao">{{weeklist3.jieshao}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 按钮点击参与 -->
+    <view class="HomeBtn">
+    <button type="primary" class="SuccessBtn" bind:tap="SuccessBtn">点击参与</button>
+    </view>
+   </view>
+   <view class="rabbit {{index1==1 ? 'frameshow' :'framehide'}}">
+       请问今天想来点兔子吗
+       <template-login></template-login>
+   </view>
+   <view class="rabbit {{index1==2 ? 'frameshow' :'framehide'}}">
+       盾之勇者成名录
+       <template-ListItem></template-ListItem>
+   </view>
+   <view class="rabbit {{index1==3 ? 'frameshow' :'framehide'}}">
+       紫罗兰永恒花园
+   </view>
+   <view class="rabbit {{index1==4 ? 'frameshow' :'framehide'}}">
+       海贼王
+   </view>
+   <view class="rabbit {{index1==5 ? 'frameshow' :'framehide'}}">
+       微信小程序
+   </view>
+</view>

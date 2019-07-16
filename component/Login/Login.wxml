@@ -1,0 +1,37 @@
+<!-- component/Login/Login.wxml -->
+<view class="login">
+    <view class="denglu">登录</view>
+    <view class="dengluFrame">
+        <view class="user">
+            账号
+            <input type="text" maxlength="12" />
+        </view>
+        <view class="pass">
+            密码
+            <input type="text" maxlength="20" />
+        </view>
+        <view class="LoginBtn">
+            <button type="default">登录</button>
+            <button type="default">取消</button>
+        </view>
+        <view class="zhucen">
+            <text>没有账号?</text>
+            <text class="info">注册</text>
+        </view>
+        <view class="privte">其他登录方式</view>
+        <view class="fangshi">
+        <view class="li1">
+        <view class="yuan"></view>
+        <text class="litext">QQ登录</text>
+        </view>
+        <view class="li1">
+        <view class="yuan"></view>
+        <text class="litext">微博登录</text>
+        </view>
+        <view class="li1">
+        <view class="yuan"></view>
+        <text class="litext">网易邮箱</text>
+        </view>
+        </view>
+    </view>
+</view>
